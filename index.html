@@ -3,21 +3,86 @@ html<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Gratis Saya</title>
+    <title>Web3 Gradient Portfolio</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; background-color: #f4f4f9; padding: 50px; }
-        h1 { color: #333; }
-        p { color: #666; font-size: 18px; }
-        .btn { display: inline-block; padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; margin-top: 20px; }
+        /* 1. Reset & Setup Base */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { 
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #311042 100%); 
+            color: #f8fafc; 
+            min-height: 100vh; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            padding: 20px;
+        }
+
+        /* 2. Kartu Utama (Glassmorphism Effect) */
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 40px 30px;
+            border-radius: 24px;
+            max-width: 450px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        /* 3. Tipografi & Gradasi Teks */
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 16px;
+            background: linear-gradient(90deg, #38bdf8, #a855f7, #f43f5e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        p {
+            color: #94a3b8;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 32px;
+        }
+
+        /* 4. Desain Tombol Interaktif */
+        .btn {
+            display: inline-block;
+            width: 100%;
+            padding: 14px 28px;
+            background: linear-gradient(90deg, #2563eb, #7c3aed);
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(124, 58, 237, 0.6);
+            background: linear-gradient(90deg, #1d4ed8, #6d28d9);
+        }
+        .btn:active {
+            transform: translateY(1px);
+        }
     </style>
 </head>
 <body>
 
-    <h1>Halo Dunia! Selamat Datang di Website Saya</h1>
-    <p>Ini adalah website pertama saya yang dibuat dari awal secara gratis.</p>
-    
-    <!-- Anda bisa menggabungkan tombol MetaMask dari latihan sebelumnya di sini nanti -->
-    <a href="#" class="btn">Pelajari Lebih Lanjut</a>
+    <!-- Wadah Kartu Tampilan -->
+    <div class="card">
+        <h1>Welcome to Web3</h1>
+        <p>Eksplorasi dunia baru yang terdesentralisasi. Ini adalah langkah awal saya membangun antarmuka masa depan.</p>
+        
+        <!-- Tombol Aksi -->
+        <button class="btn">Connect Wallet</button>
+    </div>
 
 </body>
 </html>
